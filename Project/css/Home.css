@@ -1,0 +1,326 @@
+
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins',sans-serif;
+  color: green;
+  
+  
+}
+
+body{
+  height:1000px;
+}
+
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  padding-bottom: 20px;
+  height: 2rem;
+  margin-top: 10px;
+  
+  border-bottom: 5px solid green;
+}
+
+.logo {
+  max-width: 70%;
+  height: 90%;
+  padding-top: 10px;
+  
+  width: 07rem; 
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  align-items: center;/* Adjust the width as needed */
+}
+.left-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.profile {
+  max-width: 60%;
+  height: 80%;
+  margin-top: 5px;
+
+  
+  width: 07rem; 
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  align-items: center;/* Adjust the width as needed */
+}
+
+
+
+
+
+
+
+.navigation-bar {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation-bar li {
+  margin-right: 30px;
+  border: 2px solid green;
+  font-size: 20px;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: border-radius 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.navigation-bar li:hover {
+  transform: scale(1.1); /* Increase the size on hover */
+  border-radius: 90px; /* Adjust the border-radius on hover */
+  box-shadow: 0 4px 10px green; /* Add box shadow on hover */
+}
+
+.navigation-bar  :hover
+{
+color: white;
+background-color: green;
+
+
+}
+
+
+.container {
+  height: 500px; /* adjust as needed */
+}
+
+.navigation-bar li a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .logo {
+      width: 100px; /* Adjust the width for smaller screens */
+  }
+
+  .header{
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navigation-bar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navigation-bar li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+
+
+
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+ 
+  width: 100%;
+  height: 40rem;
+
+  border-bottom: 2px solid green;
+  
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.swiper-slide img {
+  max-width: fit-content; /* Adjust the image size to fit the slide */
+  max-height: fit-content;
+}
+/* Change the color of the pagination bullets */
+.swiper-pagination-bullet {
+  background-color:white;
+}
+
+/* Change the color of the navigation buttons */
+.swiper .swiper-button-prev,.swiper
+.swiper-button-next {
+  color: green;
+  
+}
+.swiper .swiper-pagination-bullet-active{
+  background: green;
+}
+
+
+
+
+
+.sub-header {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center; /* align child divs horizontally center */
+  align-items: center; /* align child divs vertically center */
+  height: 20rem;
+  width: 100%;
+  border-bottom: 2px green;
+  
+ 
+  
+}
+
+.features {
+  flex: 1;
+  margin: 0 10px; /* add margin to both left and right */
+  border: 3px solid green;
+  border-radius: 60px;
+  height: 20rem;
+
+}
+.features{
+  transition: border-radius 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features:hover {
+  transform: scale(1.03); /* Increase the size on hover */
+  border-radius: 90px; /* Adjust the border-radius on hover */
+  box-shadow: 0 4px 10px green; /* Add box shadow on hover */
+}
+.libraries{
+  display:inline-block;
+  font-size:25px;
+  border-bottom: 2px solid green;
+  font-weight: 600;
+  margin-top: 15px;
+  text-align: center;
+
+      
+}
+
+.books-icon
+{
+  margin-top: 5px;
+  height: 150px;
+  padding-top: 50px;
+ 
+}
+
+.academics-status-icon{
+  margin-top: 5px;
+
+  height: 150px;
+  padding-top: 50px;
+}
+
+.gallery-icon{
+  height: 140px;
+  padding-top: 50px;
+}
+
+
+.upcoming-header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+  height: 60px;
+  border-bottom: 4px solid green;
+  margin-left: 240px;
+  margin-right: 240px;
+  
+}
+
+
+.upcoming{
+  margin-top: 03px;
+
+  display: flex;
+  justify-content: center; /* align child divs horizontally center */
+  align-items: center; /* align child divs vertically center */
+  height: 200px;
+  width: 100%;
+  
+  padding-bottom: 50px;
+}
+
+
+.form-icon{
+  display: flex;
+  height: 145px;
+  margin-top: 04rem;
+  padding-bottom: 50px;
+
+}
+.interaction-icon{
+  margin-top: 30px;
+}
+
+
+
+
+.footer {
+ 
+ margin-top: 10rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 40px;
+  
+}
+
+.contact-us {
+  margin-top: 20px;
+  
+}
+
+.contact-us h2 {
+  
+  margin-bottom: 10px;
+}
+
+.contact-us p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.footer p {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.footer p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+

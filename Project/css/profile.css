@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    color: green;
+    
+    
+  }
+  
+  body{
+    height:1000px;
+  }
+  
+  
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 20px;
+    height: 2rem;
+    margin-top: 10px;
+    
+    border-bottom: 5px solid green;
+  }
+  
+  .logo {
+    max-width: 70%;
+    height: 90%;
+    padding-top: 10px;
+    
+    width: 07rem; 
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    align-items: center;/* Adjust the width as needed */
+  }
+  .left-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .profile {
+    max-width: 60%;
+    height: 80%;
+    margin-top: 5px;
+  
+    
+    width: 07rem; 
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    align-items: center;/* Adjust the width as needed */
+  }
+  
+  
+  
+  
+  
+  
+  
+  .navigation-bar {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navigation-bar li {
+    margin-right: 30px;
+    border: 2px solid green;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: border-radius 0.3s ease, box-shadow 0.3s ease;
+    
+  }
+  
+  .navigation-bar li:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+    border-radius: 90px; /* Adjust the border-radius on hover */
+    box-shadow: 0 4px 10px green; /* Add box shadow on hover */
+  }
+  
+  .navigation-bar  :hover
+  {
+  color: white;
+  background-color: green;
+  
+  
+  }
+  
+  
+  
+  
+  
+  .container {
+    height: 500px; /* adjust as needed */
+  }
+  
+  .navigation-bar li a {
+    text-decoration: none;
+  }
+  
+  @media (max-width: 600px) {
+    .logo {
+        width: 100px; /* Adjust the width for smaller screens */
+    }
+  
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .navigation-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .navigation-bar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+  }
+#menu{
+    
+    height: 500px;
+    width: 100%;
+}  
+.welcome{
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 3px solid green;
+}
+.tab1{
+    align-items: center;
+    text-align: center;
+}
+.menu{
+    height: 50px;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: white;
+    color: green;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 2px solid green;
+
+}
+.menu:hover{
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+}
+.mytable{
+    margin-top: 20px;
+    
+}
+
+.menu:active
+{
+  background-color: darkblue;
+  color: white;
+}
